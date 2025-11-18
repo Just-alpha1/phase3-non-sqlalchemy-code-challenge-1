@@ -145,3 +145,19 @@ class TestMagazine:
         assert len(magazine_1.contributors()) == 2
 
    
+    def test_article_titles(self):
+        """returns list of titles strings of all articles written for that magazine"""
+        author_1 = Author("Carry Bradshaw")
+        magazine_1 = Magazine("Vogue", "Fashion")
+        magazine_2 = Magazine("AD", "Architecture")
+        magazine_3 = Magazine("GQ", "Fashion")
+        Article(author_1, magazine_1, "How to wear a tutu with style")
+        Article(author_1, magazine_2, "2023 Eccentric Design Trends")
+        Article(author_1, magazine_2, "Carrara Marble is so 2020")
+
+        assert magazine_1.article_titles() == ["How to wear a tutu with style"]
+        assert magazine_2.article_titles() == [
+            "2023 Eccentric Design Trends",
+            "Carrara Marble is so 2020",
+        ]
+        assert magazine_3.article_titles() is None
