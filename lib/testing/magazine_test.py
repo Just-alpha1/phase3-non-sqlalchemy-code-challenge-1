@@ -161,3 +161,20 @@ class TestMagazine:
             "Carrara Marble is so 2020",
         ]
         assert magazine_3.article_titles() is None
+
+    def test_contributing_authors(self):
+        """returns author list who have written more than 2 articles for the magazine"""
+        author_1 = Author("Carry Bradshaw")
+        author_2 = Author("Nathaniel Hawthorne")
+        magazine_1 = Magazine("Vogue", "Fashion")
+        magazine_2 = Magazine("AD", "Architecture")
+        Article(author_1, magazine_1, "How to wear a tutu with style")
+        Article(author_1, magazine_1, "How to be single and happy")
+        Article(author_1, magazine_1, "Dating life in NYC")
+        Article(author_1, magazine_2, "Carrara Marble is so 2020")
+        Article(author_2, magazine_2, "2023 Eccentric Design Trends")
+
+        assert author_1 in magazine_1.contributing_authors()
+        assert author_2 not in magazine_1.contributing_authors()
+        assert all(isinstance(author, Author) for author in magazine_1.contributing_authors())
+        assert magazine_2.contributing_authors() is None
