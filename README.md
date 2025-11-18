@@ -19,7 +19,7 @@ This project demonstrates **classes, instances, object relationships, encapsulat
 ## Setup Instructions
 
 ### **1. Clone the Repository**
-```bash
+`bash
 git clone https://github.com/<your-username>/magazine-domain-oop.git
 cd magazine-domain-oop
 
