@@ -1,12 +1,9 @@
-# MAGAZINE DOMAIN – PYTHON OOP PROJECT
+ MAGAZINE DOMAIN
+A Python project implementing a Magazine–Author–Article domain model.  
+This project demonstrates classes, instances, object relationships, encapsulation, validation, and aggregate methods** following;
 
-A Python object-oriented programming project implementing a **Magazine–Author–Article** domain model.  
-This project demonstrates **classes, instances, object relationships, encapsulation, validation, and aggregate methods** following Phase 3 OOP requirements.
-
-## Features
-
+Features
 - Define `Author`, `Magazine`, and `Article` classes  
-- Many-to-many relationship between Authors and Magazines  
 - Strict validation for attributes  
 - Association and aggregate methods  
 - Tracks all Article and Magazine instances  
@@ -14,11 +11,7 @@ This project demonstrates **classes, instances, object relationships, encapsulat
 - Fully testable with `pytest`  
 - Includes `debug.py` interactive console for manual testing
 
----
-
-## Setup Instructions
-
-### **1. Clone the Repository**
+ Setup Instructions
 `bash
 git clone https://github.com/<your-username>/magazine-domain-oop.git
 cd magazine-domain-oop
