@@ -1,6 +1,6 @@
- MAGAZINE DOMAIN
+MAGAZINE DOMAIN
 A Python project implementing a Magazine–Author–Article domain model.  
-This project demonstrates classes, instances, object relationships, encapsulation, validation, and aggregate methods** following;
+This project demonstrates classes, instances, object relationships, encapsulation, validation, and aggregate methods following;
 
 Features
 - Define `Author`, `Magazine`, and `Article` classes  
@@ -11,10 +11,10 @@ Features
 - Fully testable with `pytest`  
 - Includes `debug.py` interactive console for manual testing
 
- Setup Instructions
+Setup Instructions
 `bash
-git clone https://github.com/<your-username>/magazine-domain-oop.git
-cd magazine-domain-oop
+git clone https://github.com/<your-username>/magazine-domain.git
+cd magazine-domain
 
 Copyright (c) 2025  Collins Thuo
 
